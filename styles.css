@@ -1,3 +1,58 @@
+/*
+*   Main site header and bio styles, including h1 and h2.
+*/
+.background-color {
+    background-color: #cceeff;
+}
+
+h1 {
+    text-align:center;
+    font-family:courier;
+    font-size:3em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family:courier !important;
+    font-size:1.5em;
+    font-weight: bold;
+    margin-left:20%;
+    margin-right:20%;
+    text-align:left;
+}
+
+h3 {
+    font-family: courier;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: courier;
+    text-align: center;
+    font-size: ;
+    font-weight: bold;
+}
+
+.site-bio {
+    text-align:center;
+}
+
+.profile-picture {
+    float:right;
+    margin-left:2em;
+    min-width: 300px;
+}
+
+.profile-body {
+    margin-left:20%;
+    margin-right:20%;
+    text-align:left;
+    font-family:verdana;
+}
+
 .icon-bar {
     width: 80%; /* Full-width */
     background-color: #555; /* Dark-grey background */

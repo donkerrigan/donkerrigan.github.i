@@ -20,6 +20,19 @@
             portrait[4] = "./photos/pecan_orchard.jpg";
             portrait[5] = "./photos/sunrise_girl.jpg";
             portrait[6] = "./photos/fort.jpg";
+            portrait[7] = "./photos/bliss.jpg";
+            portrait[8] = "./photos/cool_beach.jpg";
+            portrait[9] = "./photos/cotton_field.jpg";
+            portrait[10] = "./photos/jeep_beach_girl.jpg";
+            portrait[11] = "./photos/love_latte.jpg";
+            portrait[12] = "./photos/pose.jpg";
+            portrait[13] = "./photos/pumpkin_portrait.jpg";
+            portrait[14] = "./photos/boardwalk.jpg";
+            portrait[15] = "./photos/coffee.jpg";
+            portrait[16] = "./photos/flower.jpg";
+            portrait[17] = "./photos/holiday.jpg";
+            portrait[18] = "./photos/swimsuit.jpg";
+            portrait[19] = "./photos/waterfall.jpg";
 
             landscape[0] = "./photos/over_boardwalk.jpg";
             landscape[1] = "./photos/over_tarkiln.jpg";
@@ -38,9 +51,16 @@
 
             wildlife[0] = "./photos/hermit.jpg";
             wildlife[1] = "./photos/hermit2.jpg";
-            wildlife[2] = "";
-            wildlife[3] = "";
-            wildlife[4] = "";
+            wildlife[2] = "./photos/baby_elk.JPG";
+            wildlife[3] = "./photos/deer.JPG";
+            wildlife[4] = "./photos/dragonfly.JPG";
+            wildlife[5] = "./photos/elk.JPG";
+            wildlife[6] = "./photos/monkey.JPG";
+            wildlife[7] = "./photos/pelican.JPG";
+            wildlife[8] = "./photos/pelican2.JPG";
+            wildlife[9] = "./photos/pelican_flight.JPG";
+            wildlife[10] = "./photos/seagull.JPG";
+            wildlife[11] = "./photos/seal.JPG";
 
             theImages[0] = "./photos/elks_knob.jpg";
             theImages[1] = "./photos/floating.jpg";
@@ -93,10 +113,10 @@
             }
         </script>
     </head>
-    <body style="background-color:#cceeff;">
-            <h1 style="text-align:center; font-family:courier; font-size:3em;"><u><b>Don Kerrigan</b></u></h1>
-            <p style="text-align:center">B.S. Software Engineering, University of West Florida<br/>Email: <a href="mailto:donkerrigan@gmail.com">donkerrigan@gmail.com</a></p>
-            <div class="icon-bar" style="text-align: center;">
+    <body class="background-color">
+            <h1>Don Kerrigan</h1>
+            <p class="site-bio">B.S. Software Engineering, University of West Florida<br/>Email: <a href="mailto:donkerrigan@gmail.com">donkerrigan@gmail.com</a></p>
+            <div class="icon-bar">
                 <a href="index.html"><i class="fa fa-home"><br/>Home</i></a>
                 <a href="https://github.com/donkerrigan"><i class="fa fa-code"><br/>GitHub</i></a>
                 <div class="dropdown active">
@@ -110,27 +130,25 @@
                         <a href="wildlifePhotos.html">Wildlife</a>
                     </div>
                 </div>
-                <!--<a class="active" href="photographs.html"><i class="fa fa-camera-retro"><br/>Photos</i></a>-->
                 <a href="Don Kerrigan Resume.pdf"><i class="fa fa-file-pdf-o"><br/>Resume</i></a>
             </div>
-            <p style="text-align:center; font-family:verdana; background-color:#ffe6b3;">
-                <div class="row">
-                    <div class="column">
-                        <a href="naturePhotos.html">Nature</a>
+            <div class="row">
+                <div class="column">
+                    <a href="naturePhotos.html"><h4>Nature</h4></a>
                         <script language="JavaScript">showImage("nature");</script>
-                    </div>
-                    <div class="column">
-                        <a href="portraitPhotos.html">Portrait</a>
-                        <script language="JavaScript">showImage("portrait");</script>
-                    </div>
-                    <div class="column">
-                        <a href="landscapePhotos.html">Landscape</a>
-                        <script language="JavaScript">showImage("landscape");</script>
-                    </div>
-                    <div class="column">
-                        <a href="wildlifePhotos.html">Wildlife</a>
-                        <script language="JavaScript">showImage("wildlife");</script>
-                    </div>
                 </div>
+                <div class="column">
+                    <a href="portraitPhotos.html"><h4>Portrait</h4></a>
+                    <script language="JavaScript">showImage("portrait");</script>
+                </div>
+                <div class="column">
+                    <a href="landscapePhotos.html"><h4>Landscape</h4></a>
+                    <script language="JavaScript">showImage("landscape");</script>
+                </div>
+                <div class="column">
+                    <a href="wildlifePhotos.html"><h4>Wildlife</h4></a>
+                    <script language="JavaScript">showImage("wildlife");</script>
+                </div>
+            </div>
     </body>
 </html>
