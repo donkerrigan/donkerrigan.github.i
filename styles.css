@@ -1,5 +1,5 @@
 /*
-*   Main site header and bio styles, including h1 and h2.
+*   Main site header and bio styles, including h1, h2, h3, and h4.
 */
 .background-color {
     background-color: #cceeff;
@@ -40,12 +40,18 @@ h4 {
     text-align:center;
 }
 
+/*
+*   Sets margins for profile picture on home page
+*/
 .profile-picture {
     float:right;
     margin-left:2em;
     min-width: 300px;
 }
 
+/*
+*   Boundaries set for text on home page
+*/
 .profile-body {
     margin-left:20%;
     margin-right:20%;
@@ -53,20 +59,25 @@ h4 {
     font-family:verdana;
 }
 
+
+/*
+*
+*   Styling for site menu bar
+*
+*/
+
 .icon-bar {
-    width: 80%; /* Full-width */
+    width: 100%; /* Full-width */
     background-color: #555; /* Dark-grey background */
     overflow: hidden; /* Overflow due to float */
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .icon-bar a {
     float: left; /* Float links side by side */
     text-align: center; /* Center-align text */
-    width: 25%; /* Equal width (5 icons with 20% width each = 100%) */
+    width: 25%; /* Equal width (4 icons with 25% width each = 100%) */
     padding: 12px 0; /* Some top and bottom padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
+    transition: all 0.3s ease; /* Added transition for hover effects */
     color: white; /* White text color */
     font-size: 36px; /* Increased font size */
 }
@@ -82,16 +93,24 @@ h4 {
 }
 
 
+/*
+*
+*   Styling for dropdown from photos icon on menu bar
+*
+*/
 
-
-/* The dropdown container */
+/*
+*   The dropdown container
+*/
 .dropdown {
   float: left;
   width: 25%;
   overflow: hidden;
 }
 
-/* Dropdown button */
+/*
+*   Dropdown button
+*/
 .dropdown .dropbtn {
   font-size: 36px;
   border: none;
@@ -105,16 +124,20 @@ h4 {
 }
 
 
-/* Dropdown content (hidden by default) */
+/*
+*   Dropdown content (hidden by default)
+*/
 .dropdown-content {
   display: none;
-  width: 19%;
+  width: 24.6%;
   position: absolute;
   background-color: #f9f9f9;
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/*
+*   Links inside the dropdown
+*/
 .dropdown-content a {
   float: none;
   color: black;
@@ -124,12 +147,16 @@ h4 {
   width: 100%;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/*
+*   Add a grey background color to dropdown links on hover
+*/
 .dropdown-content a:hover {
   background-color: #000;
 }
 
-/* Show the dropdown menu on hover */
+/*
+*   Show the dropdown menu on hover
+*/
 .dropdown:hover .dropdown-content{
   display: block;
   color: white;
