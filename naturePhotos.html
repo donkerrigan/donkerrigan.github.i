@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Don Kerrigan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="photopagestyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script language="JavaScript">
+            // Array of all images to be displayed
+            var theImages = [];
+            var portrait = [];
+            var landscape = [];
+            var nature = [];
+            var wildlife = [];
+
+            portrait[0] = "./photos/jeep_life.jpg";
+            portrait[1] = "./photos/floating.jpg";
+            portrait[2] = "./photos/reflection_bayou.jpg";
+            portrait[3] = "./photos/pumpkin.jpg";
+            portrait[4] = "./photos/pecan_orchard.jpg";
+            portrait[5] = "./photos/sunrise_girl.jpg";
+            portrait[6] = "./photos/fort.jpg";
+
+            landscape[0] = "./photos/over_boardwalk.jpg";
+            landscape[1] = "./photos/over_tarkiln.jpg";
+            landscape[2] = "./photos/over_orchard.jpg";
+            landscape[3] = "./photos/beach_shore.jpg";
+            landscape[4] = "./photos/smnp.jpg";
+            landscape[4] = "./photos/sound_side.jpg";
+
+            nature[0] = "./photos/elks_knob.jpg";
+            nature[1] = "./photos/large_oak.jpg";
+            nature[2] = "./photos/lightning_bolt.jpg";
+            nature[3] = "./photos/lightning_palm.jpg";
+            nature[4] = "./photos/moon_tree.jpg";
+            nature[5] = "./photos/misty_creek.jpg";
+            nature[6] = "./photos/nature_bridge.jpg";
+
+            wildlife[0] = "./photos/hermit.jpg";
+            wildlife[1] = "./photos/hermit2.jpg";
+            wildlife[2] = "";
+            wildlife[3] = "";
+            wildlife[4] = "";
+
+            theImages[0] = "./photos/elks_knob.jpg";
+            theImages[1] = "./photos/floating.jpg";
+            theImages[2] = "./photos/fort.jpg";
+            theImages[3] = "./photos/jeep_life.jpg";
+            theImages[4] = "./photos/large_oak.jpg";
+            theImages[5] = "./photos/lightning_bolt.jpg";
+            theImages[6] = "./photos/lightning_palm.jpg";
+            theImages[7] = "./photos/misty_creek.jpg";
+            theImages[8] = "./photos/moon_tree.jpg";
+            theImages[9] = "./photos/nature_bridge.jpg";
+            theImages[10] = "./photos/over_boardwalk.jpg";
+            theImages[11] = "./photos/over_orchard.jpg";
+            theImages[12] = "./photos/over_tarkiln.jpg";
+            theImages[13] = "./photos/pecan_orchard.jpg";
+            theImages[14] = "./photos/pumpkin.jpg";
+            theImages[15] = "./photos/reflection_bayou.jpg";
+            theImages[16] = "./photos/smnp.jpg";
+            theImages[17] = "./photos/sunrise_girl.jpg";
+            theImages[18] = "./photos/umbrella.jpg";
+            theImages[19] = "./photos/hermit.jpg";
+            theImages[20] = "./photos/hermit2.jpg";
+            theImages[21] = "./photos/sound_side.jpg";
+
+            var p = theImages.length;
+            function showImage(type){
+                var currentPhotos = [];
+                switch(type){
+                    case "nature":
+                        currentPhotos = nature;
+                        break;
+                    case "landscape":
+                        currentPhotos = landscape;
+                        break;
+                    case "portrait":
+                        currentPhotos = portrait;
+                        break;
+                    case "wildlife":
+                        currentPhotos = wildlife;
+                        break;
+                    default:
+                        currentPhotos = theImages;
+                }
+                for(q=0; q<5; q++){
+                    p = currentPhotos.length;
+                    var whichImage = Math.floor(Math.random()*(p-0));
+                    document.write('<img src="'+currentPhotos[whichImage]+'" style="width:100%">');
+                    currentPhotos.splice(whichImage, 1);
+                }
+            }
+        </script>
+</head>
+    <body>
+        <p style="background-color:#cceeff;">
+        <h1 style="text-align:center; font-family:courier; font-size:3em;"><u><b>Don Kerrigan</b></u></h1>
+        <p style="text-align:center">B.S. Software Engineering, University of West Florida<br/>Email: <a href="mailto:donkerrigan@gmail.com">donkerrigan@gmail.com</a></p>
+        <div class="icon-bar" style="text-align: center;">
+            <a href="index.html"><i class="fa fa-home"><br/>Home</i></a>
+            <a href="https://github.com/donkerrigan"><i class="fa fa-code"><br/>GitHub</i></a>
+            <div class="dropdown active">
+                <button class="dropbtn" onclick="photographs.html">
+                    <a href="photographs.html" style="color:black; width: 25%; text-align: center;"><i class="fa fa-camera-retro"><i style="float:right;" class="fa fa-caret-down"></i><br/>Photos</i></a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="portraitPhotos.html">Portrait</a>
+                    <a href="landscapePhotos.html">Landscape</a>
+                    <a href="naturePhotos.html">Nature</a>
+                    <a href="wildlifePhotos.html">Wildlife</a>
+                </div>
+            </div>
+            <!--<a class="active" href="photographs.html"><i class="fa fa-camera-retro"><br/>Photos</i></a>-->
+            <a href="Don Kerrigan Resume.pdf"><i class="fa fa-file-pdf-o"><br/>Resume</i></a>
+        </div>
+        <p style="text-align:center; font-family:verdana; background-color:#ffe6b3;">
+            <div style="font-family: courier; text-align: center; font-size: 3em; font-weight: bold;">
+                Nature
+                <div class="row">
+                    <div class="column">
+                        <script language="JavaScript">showImage("nature");</script>
+                    </div>
+                    <div class="column">
+                        <script language="JavaScript">showImage("nature");</script>
+                    </div>
+                    <div class="column">
+                        <script language="JavaScript">showImage("nature");</script>
+                    </div>
+                    <div class="column">
+                        <script language="JavaScript">showImage("nature");</script>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

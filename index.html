@@ -6,17 +6,29 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body style="background-color:#cceeff;">
+  <a id="home"></a>
   <h1 style="text-align:center; font-family:courier; font-size:3em;"><u><b>Don Kerrigan</b></u></h1>
     <p style="text-align:center">B.S. Software Engineering, University of West Florida<br/>Email: <a href="mailto:donkerrigan@gmail.com">donkerrigan@gmail.com</a></p>
   <div class="icon-bar" style="text-align: center;">
-      <a class="active" href="index.html"><i class="fa fa-home"><br/>Home</i></a>
+      <a href="index.html" class="active"><i class="fa fa-home"><br/>Home</i></a>
       <a href="https://github.com/donkerrigan"><i class="fa fa-code"><br/>GitHub</i></a>
-      <a href="photographs.html"><i class="fa fa-camera-retro"><br/>Photos</i></a>
+      <div class="dropdown">
+          <button class="dropbtn" onclick="photographs.html">
+              <a href="photographs.html" style="color:white; width: 25%; text-align: center;"><i class="fa fa-camera-retro"><i style="float:right;" class="fa fa-caret-down"></i><br/>Photos</i></a>
+          </button>
+          <div class="dropdown-content">
+              <a href="portraitPhotos.html">Portrait</a>
+              <a href="landscapePhotos.html">Landscape</a>
+              <a href="naturePhotos.html">Nature</a>
+              <a href="wildlifePhotos.html">Wildlife</a>
+          </div>
+      </div>
+      <!--<a class="active" href="photographs.html"><i class="fa fa-camera-retro"><br/>Photos</i></a>-->
       <a href="Don Kerrigan Resume.pdf"><i class="fa fa-file-pdf-o"><br/>Resume</i></a>
   </div>
 	
-    <p style="padding-left:10em; text-align:left; font-family:verdana">
-		<img style="float:right; margin-right:10em; margin-left:2em;" src="Website Personal Picture.JPG" width=25% height=25% alt="Me"/>
+    <p style="margin-left:20%; margin-right:20%; text-align:left; font-family:verdana">
+		<img style="float:right; margin-left:2em;" src="Website Personal Picture.JPG" width=25% height=25% alt="Me"/>
 		<b style="font-family:courier; font-size:1.5em;">About</b>
 		<br/>
 			I am a 24 year old Software Engineer from Pensacola, FL. I received my bachelor's degree in Software Engineering from the University of West Florida in 2017 with a minor in Fine Arts specialized in

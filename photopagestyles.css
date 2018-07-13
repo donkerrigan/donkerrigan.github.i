@@ -18,6 +18,10 @@ body {
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+    font-family: courier;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -26,6 +30,10 @@ body {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
+    font-family: courier;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
  }
 
  .column img {

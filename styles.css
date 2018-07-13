@@ -1,7 +1,7 @@
 .icon-bar {
     width: 80%; /* Full-width */
     background-color: #555; /* Dark-grey background */
-    overflow: auto; /* Overflow due to float */
+    overflow: hidden; /* Overflow due to float */
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -24,4 +24,58 @@
 .active {
     background-color: #ffae00; /* Add an active/current color */
     color: black !important;
+}
+
+
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 36px;
+  border: none;
+  outline: none;
+  float: center;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  width: 390%;
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  width: 19%;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #000;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+  display: block;
+  color: white;
 }
