@@ -7,10 +7,9 @@
 
 h1 {
     text-align:center;
-    font-family:courier;
-    font-size:3em;
+    font-family: mistral;
+    font-size:5em;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 h2 {
@@ -23,14 +22,14 @@ h2 {
 }
 
 h3 {
-    font-family: courier;
+    font-family: mistral;
     text-align: center;
     font-size: 3em;
     font-weight: bold;
 }
 
 h4 {
-    font-family: courier;
+    font-family: mistral;
     text-align: center;
     font-size:;
     font-weight: bold;
@@ -171,4 +170,23 @@ h4 {
 .dropdown:hover .dropdown-content{
   display: block;
   color: white;
+}
+
+.video-section{
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 20%;
+	padding-bottom: 20%;
+	height: 0;
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    bottom: 10%;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    height: 55%;
+    margin: 50px;
 }
