@@ -205,16 +205,15 @@ footer {
     position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 20%;
-	height: 0;
+	overflow: hidden;
 }
 
 .video {
-    position: absolute;
-    top: 450px;
-    bottom: 10%;
+    position: relative;
+    top: 20%;
+    bottom:20%;
     left: 25%;
     right: 25%;
     width: 50%;
-    height: 55%;
-    margin: 50px;
+    height: 400px;
 }
