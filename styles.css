@@ -17,7 +17,7 @@
 
 h1 {
     text-align:center;
-    font-family: mistral;
+    font-family: "mistral";
     font-size:5em;
     font-weight: bold;
 }
@@ -32,14 +32,14 @@ h2 {
 }
 
 h3 {
-    font-family: mistral;
+    font-family: "mistral";
     text-align: center;
     font-size: 3em;
     font-weight: bold;
 }
 
 h4 {
-    font-family: mistral;
+    font-family: "mistral";
     text-align: center;
     font-size:;
     font-weight: bold;
