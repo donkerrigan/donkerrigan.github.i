@@ -45,6 +45,14 @@ h4 {
     font-weight: bold;
 }
 
+footer {
+    font-family: courier;
+    font-size: 0.8em;
+    text-align:center;
+    float:bottom;
+    margin-top: 100px;
+}
+
 .menubartxt {
     font-family:mistral, courier;
     font-weight: bold;
@@ -197,7 +205,6 @@ h4 {
     position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 20%;
-	padding-bottom: 20%;
 	height: 0;
 }
 
