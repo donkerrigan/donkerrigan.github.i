@@ -66,6 +66,17 @@ h4 {
 }
 
 /*
+*   Style to position LinkedIn badge on home page
+*/
+.linkedin-profile-badge {
+    float:right;
+    margin-left:2em;
+    margin-right: 20%;
+    margin-top: 15px;
+    min-width: 300px;
+}
+
+/*
 *   Boundaries set for text on home page
 */
 .profile-body {
