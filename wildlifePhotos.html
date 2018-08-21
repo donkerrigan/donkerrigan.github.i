@@ -3,54 +3,11 @@
 <head>
     <title>Don Kerrigan</title>
     <link rel="shortcut icon" href="./website_icon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="photopagestyles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/photopagestyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script language="JavaScript">
-            // Array of all images to be displayed
-            var wildlife = [];
-
-            wildlife[0] = "./photos/hermit.jpg";
-            wildlife[1] = "./photos/hermit2.jpg";
-            wildlife[2] = "./photos/baby_elk.JPG";
-            wildlife[3] = "./photos/deer.JPG";
-            wildlife[4] = "./photos/dragonfly.JPG";
-            wildlife[5] = "./photos/elk.JPG";
-            wildlife[6] = "./photos/monkey.JPG";
-            wildlife[7] = "./photos/pelican.JPG";
-            wildlife[8] = "./photos/pelican2.JPG";
-            wildlife[9] = "./photos/pelican_flight.JPG";
-            wildlife[10] = "./photos/seagull.JPG";
-            wildlife[11] = "./photos/seal.JPG";
-
-            var p = theImages.length;
-            function showImage(type){
-                var currentPhotos = [];
-                switch(type){
-                    case "nature":
-                        currentPhotos = nature;
-                        break;
-                    case "landscape":
-                        currentPhotos = landscape;
-                        break;
-                    case "portrait":
-                        currentPhotos = portrait;
-                        break;
-                    case "wildlife":
-                        currentPhotos = wildlife;
-                        break;
-                    default:
-                        currentPhotos = theImages;
-                }
-                for(q=0; q<5; q++){
-                    p = currentPhotos.length;
-                    var whichImage = Math.floor(Math.random()*(p-0));
-                    document.write('<img class="myImg" alt="" src="'+currentPhotos[whichImage]+'" style="width:100%;">');
-                    currentPhotos.splice(whichImage, 1);
-                }
-            }
-        </script>
+    <script src="./js/photographsJS.js"></script>
 </head>
     <body class="background-color">
         <img class="header-image" src="./website_header.png">
@@ -104,29 +61,7 @@
         </div>
 
         <!--    Javascript to handle user selecting an image to view    -->
-        <script>
-            // Get the modal
-            var modal = document.getElementById('myModal');
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = $('.myImg');
-            var modalImg = $("#img01");
-            var captionText = document.getElementById("caption");
-            $('.myImg').click(function(){
-                modal.style.display = "block";
-                var newSrc = this.src;
-                modalImg.attr('src', newSrc);
-                captionText.innerHTML = this.alt;
-            });
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-        </script>
+        <script src="./js/modalJS.js"></script>
     </body>
     <footer>Copyright &copy; 2018 Don Kerrigan. | All Rights Reserved.</footer>
 </html>
