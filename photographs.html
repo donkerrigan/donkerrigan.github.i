@@ -8,63 +8,52 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="./js/photographsJS.js"></script>
+        <script language="JavaScript">
+            $(function(){
+                $("#menuBar").load("menuBar.html");
+            });
+      </script>
     </head>
     <body class="background-color">
-    <a href="index.html"><img class="header-image" src="./website_header.png"></a>
-            <p class="site-bio main-info-text">B.S. Software Engineering, University of West Florida<br/>Email: <a href="mailto:donkerrigan@gmail.com">donkerrigan@gmail.com</a></p>
-            <div class="icon-bar">
-                <a href="index.html"><i class="fa fa-home"><br/><small class="menubartxt">Home</small></i></a>
-                <a href="https://github.com/donkerrigan"><i class="fa fa-code"><br/><small class="menubartxt">GitHub</small></i></a>
-                <div class="dropdown active">
-                    <button class="dropbtn" onclick="photographs.html">
-                        <a href="photographs.html" style="color:black; width: 25%; text-align: center;"><i class="fa fa-camera-retro"><i style="float:right;" class="fa fa-caret-down"></i><br/><small class="menubartxt">Photos</small></i></a>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="portraitPhotos.html">Portrait</a>
-                        <a href="landscapePhotos.html">Landscape</a>
-                        <a href="naturePhotos.html">Nature</a>
-                        <a href="wildlifePhotos.html">Wildlife</a>
-                        <a href="videos.html">Video</a>
-                    </div>
-                </div>
-                <a href="Don Kerrigan Resume.pdf"><i class="fa fa-file-pdf-o"><br/><small class="menubartxt">Resume</small></i></a>
+        <a href="index.html"><img class="header-image" src="./website_header.png"></a>
+        <p class="site-bio main-info-text">B.S. Software Engineering, University of West Florida<br/>Email: <a href="mailto:donkerrigan@gmail.com">donkerrigan@gmail.com</a></p>
+        <div id="menuBar"></div>
+
+        <!--    Image gallary   -->
+        <div class="row">
+            <div class="column">
+                <a href="naturePhotos.html"><h4>Nature</h4></a>
+                <script language="JavaScript">showImage("nature");</script>
             </div>
-
-            <!--    Image gallary   -->
-            <div class="row">
-                <div class="column">
-                    <a href="naturePhotos.html"><h4>Nature</h4></a>
-                        <script language="JavaScript">showImage("nature");</script>
-                </div>
-                <div class="column">
-                    <a href="portraitPhotos.html"><h4>Portrait</h4></a>
-                    <script language="JavaScript">showImage("portrait");</script>
-                </div>
-                <div class="column">
-                    <a href="landscapePhotos.html"><h4>Landscape</h4></a>
-                    <script language="JavaScript">showImage("landscape");</script>
-                </div>
-                <div class="column">
-                    <a href="wildlifePhotos.html"><h4>Wildlife</h4></a>
-                    <script language="JavaScript">showImage("wildlife");</script>
-                </div>
+            <div class="column">
+                <a href="portraitPhotos.html"><h4>Portrait</h4></a>
+                <script language="JavaScript">showImage("portrait");</script>
             </div>
-
-            <!-- Enlarge image window -->
-            <div id="myModal" class="modal">
-
-                <!-- The Close Image Button -->
-                <span class="close">&times;</span>
-
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" src="" id="img01">
-
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
+            <div class="column">
+                <a href="landscapePhotos.html"><h4>Landscape</h4></a>
+                <script language="JavaScript">showImage("landscape");</script>
             </div>
+            <div class="column">
+                <a href="wildlifePhotos.html"><h4>Wildlife</h4></a>
+                <script language="JavaScript">showImage("wildlife");</script>
+            </div>
+        </div>
 
-            <!--    Javascript to handle user selecting an image to view    -->
-            <script src="./js/modalJS.js"></script>
+        <!-- Enlarge image window -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Image Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" src="" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+
+        <!--    Javascript to handle user selecting an image to view    -->
+        <script src="./js/modalJS.js"></script>
     </body>
     <footer>Copyright &copy;  2018 Don Kerrigan. | All Rights Reserved.</footer>
 </html>
