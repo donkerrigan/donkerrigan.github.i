@@ -1,9 +1,9 @@
 // Array of all images to be displayed
-let theImages: string[] = [];
-let portrait: string[] = [];
-let landscape: string[] = [];
-let nature: string[] = [];
-let wildlife: string[] = [];
+let theImages = [];
+let portrait = [];
+let landscape = [];
+let nature = [];
+let wildlife = [];
 
 portrait.push("./photos/portrait/jeep_life.jpg");
 portrait.push("./photos/portrait/floating.jpg");
@@ -86,7 +86,7 @@ wildlife.push( "./photos/wildlife/seal.JPG");
 
 theImages.push("./photos/umbrella.jpg");
 
-var p: number = theImages.length;
+var p = theImages.length;
 function showImage(type){
     var currentPhotos = [];
     switch(type){
@@ -105,9 +105,9 @@ function showImage(type){
         default:
             currentPhotos = nature;
     }
-    for(let q: number = 0; q < 5; q++){
+    for(q = 0; q < 5; q++){
         p = currentPhotos.length;
-        const whichImage: number = Math.floor(Math.random()*(p-0));
+        const whichImage = Math.floor(Math.random()*(p-0));
         document.write('<img class="myImg" alt="" src="' + currentPhotos[whichImage] + '" style="width:100%;">');
         currentPhotos.splice(whichImage, 1);
     }
