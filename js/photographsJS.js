@@ -1,3 +1,5 @@
+import './require.js';
+
 const fs = require('fs');
 
 // Array of all images to be displayed
