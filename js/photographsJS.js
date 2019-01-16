@@ -1,4 +1,4 @@
-import './require.js';
+import './js/require.js';
 
 const fs = require('fs');
 
